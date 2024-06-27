@@ -1,0 +1,5 @@
+--------------------- READ.ME ---------------------
+
+Para ser testado esta aplicação, é necessário o uso de uma IDE. Recomenda-se a utilização da IDE Microsoft Visual Studio. Também é necessário a utilização de um SGBD para que a aplicação funcione 100%. 
+
+Basta baixar a IDE, baixar os arquivos presentes neste repositório (vai vir como ZIP, precisa descompactar). Na abertura da aplicação é só ir no caminho Arquivo > Novo > Novo Projeto a Partir de Código Existente... e depois selecionar o diretório que baixou o zip.
