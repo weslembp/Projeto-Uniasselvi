@@ -1,0 +1,26 @@
+﻿@model LocadoraModel
+@{
+
+    ViewData["title"] = "Cadastrar Locações";
+
+}
+
+<div class="container p-8 align-items-center justify-content-center">
+
+    <div class="mb-3 align-items-center d-flex justify-content-center " style="margin-top: 100px !important">
+        <h1 class="text-light">Cadastro de Locações</h1>
+    </div>
+
+    <form method="post" asp-controller="Locacoes" asp-action="Cadastrar" class=" align-items-center justify-content-center">
+        <div class="mb-3 ">
+            <label for="Cliente" class="form-label  text-light">Nome do Cliente</label>
+            <input type="text" class="form-control bg-dark text-light" asp-for="Cliente" id="Cliente">
+        </div>
+        <div class="mb-5 ">
+            <label for="Filme" class="form-label text-light">Nome do Filme</label>
+            <input type="text" class="form-control bg-dark text-light" asp-for="FilmeEmprestado" id="Filme">
+        </div>
+
+        <button type="submit" class="d-flex btn btn-success justify-content-end ms-auto p-2">Cadastrar</button>
+    </form>
+</div>

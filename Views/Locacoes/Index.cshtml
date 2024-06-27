@@ -1,0 +1,47 @@
+﻿@model IEnumerable<LocadoraModel>
+@{
+	ViewData["title"] = "Locações";
+}
+
+<div class="container">
+
+    <div class="d-flex justify-content-between align-items-center mb-3 " style="margin-top: 100px !important" >
+        <h1 class="text-light">Locações</h1>
+      <!-- <div>
+            <a class="btn btn-light mx-2" asp-controller="Cadastro" asp-action="Index"><i class="bi bi-person-fill mx-2"></i>Novo Cliente</a>
+         </div>-->
+    </div>
+ 
+
+
+    <table id="Locacoes"  class="table table-dark table-hover mt-2">
+        <br />
+       <thead>
+        <tr>
+          <th scope="col">Cliente</th>
+          <th scope="col">Filme Locado</th>
+          <th scope="col">Data Locação</th>
+
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+
+          @if(Model != null){
+              @foreach(var locadora in Model)
+                {
+                    <tr  >
+                        <th scope="row">@locadora.Cliente</th>
+                        <td>@locadora.FilmeEmprestado</td>
+                        <td>@locadora.DataEmprestimo</td>
+                        <td>
+                            
+                            <a class="btn btn-danger mx-2" asp-controller="Locacoes" asp-action="Excluir" asp-route-id="@locadora.Id"><i class="bi bi-trash3-fill"></i></a>
+                        </td>
+                    </tr>
+                }
+            }
+    
+      </tbody>
+    </table>
+</div>

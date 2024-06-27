@@ -1,0 +1,30 @@
+﻿@model LocadoraModel
+@{
+    TempData["title"] = "Excluir Registros";
+}
+
+<div class="container p-5 rounded-5">
+    <div class="mb-5 ">
+        <h1 class="text-dark">Exclusão de Registros</h1>
+    </div>
+    <form method="post" asp-controller="Locacoes" asp-action="Excluir">
+        <input type="hidden" asp-for=Id />
+      
+        <div class="mb-3">
+            <label for="Cliente" class="text-dark form-label">Cliente:</label>
+            <input type="text" asp-for="Cliente" class="shadow-none form-control text-dark" id="exampleInputCliente" disabled>
+            <span class="text-danger" asp-validation-for="Cliente"></span>
+        </div>
+        <div class="mb-3">
+            <label class="text-dark form-label" for="FilmeEmprestado">Filme:</label>
+            <input type="text" asp-for="FilmeEmprestado" class="shadow-none form-control text-dark" id="exampleInputFilmeEmprestado" disabled>
+            <span class="text-danger" asp-validation-for="FilmeEmprestado"></span>
+        </div>
+        <div class="d-flex justify-content-end align-content-end  mt-5">
+         
+            <button type="submit" class="w-10 btn btn-outline-danger ">Excluir</button>
+          
+        </div>
+       
+    </form>
+</div>

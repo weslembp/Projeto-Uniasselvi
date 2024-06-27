@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container d-flex flex-column align-items-center justify-content-center">
+    
+    <div class="row mt-5 ">
+        <div class="col text-center">
+            <h1 class="display-4 text-white">Bem vindo a LoLu!</h1>
+            <!--<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <a href="@Url.Action("Index", "Cadastro")" class="btn btn-primary">Cadastrar Cliente</a>
+                <a href="@Url.Action("Index", "Locacoes")" class="btn btn-secondary ">Consultar Clientes</a>
+            </div>
+        </div>
+    </div>
+</div>

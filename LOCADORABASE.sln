@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LOCADORABASE", "LOCADORABASE.csproj", "{FF3E214F-502E-47C5-8DD7-1D701FCAF754}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF3E214F-502E-47C5-8DD7-1D701FCAF754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3E214F-502E-47C5-8DD7-1D701FCAF754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3E214F-502E-47C5-8DD7-1D701FCAF754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3E214F-502E-47C5-8DD7-1D701FCAF754}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D93F2433-5D8F-4BCB-890D-6C85785B761F}
+	EndGlobalSection
+EndGlobal
